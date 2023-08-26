@@ -1,0 +1,20 @@
+.flex-container{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 300px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 450px;
+    align-items: center;
+}
+
+.image{
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+}
+.example-card{
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+}

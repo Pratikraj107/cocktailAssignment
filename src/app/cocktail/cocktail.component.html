@@ -1,0 +1,35 @@
+<app-top-menu></app-top-menu>
+<div>
+    <!--Drop down with option to choose drink type-->
+    <mat-form-field>
+    <mat-label>Choose Drink Type</mat-label>
+    <mat-select [(value)]="selectedDrink">
+      <mat-option></mat-option>
+      <mat-option [value]="option.value" *ngFor="let option of drinkType">{{ option.viewValue }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>You selected: {{selectedDrink}}</p>
+
+  <!-- Cards displaying drinks details-->
+    <div class="flex-container">
+        <mat-card class="example-card"  *ngFor="let d of displayData | filter:selectedDrink">
+            <img class="image" src= "{{d.strDrinkThumb}}">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title style="color: rgb(41, 44, 201);">{{d.strDrink}}</mat-card-title>
+            </mat-card-header>
+         
+            <mat-card-content>
+                <p style="color: rgb(202, 120, 20);">
+                    {{d.strAlcoholic}}
+                </p>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    {{d.strInstructions}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button style="color: rgb(41, 44, 201);" mat-button (click)="getIngredients(d.idDrink)">Ingredients</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

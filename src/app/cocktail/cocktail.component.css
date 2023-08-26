@@ -1,0 +1,18 @@
+.flex-container{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+  
+}
+
+.image{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.example-card{
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+}

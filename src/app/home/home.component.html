@@ -1,0 +1,47 @@
+<app-top-menu></app-top-menu>
+<div>
+    <div class="flex-container">
+        <!-- Mojito Card-->
+        <mat-card class="example-card">
+            <mat-card-header class="card-header" >
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>
+                 <h1 style="font-size: 40px; color:rgb(41, 44, 201); " >Mojito</h1>  
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content >
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    Mojito  is a traditional Cuban punch. 
+                    The cocktail often consists of five ingredients: white rum, 
+                    sugar (traditionally sugar cane juice), lime juice, soda water,
+                    and mint. Its combination of sweetness, citrus, and herbaceous 
+                    mint flavors is intended to complement the rum, and has made the 
+                    mojito a popular summer drink
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button style="color: rgb(41, 44, 201);" mat-button (click)="getMojito('Mojito')">Click</button>
+            </mat-card-actions>
+        </mat-card>
+       <!-- Margarita Card-->
+        <mat-card class="example-card">
+            <mat-card-header class="card-header">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>
+                    <h1 style="font-size: 40px; color: rgb(41, 44, 201);" >Margarita</h1>  
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    A margarita is a cocktail consisting of tequila, triple sec, and lime juice.
+                    Some margarita recipes include simple syrup as well and are often served with 
+                    salt on the rim of the glass.Margaritas can be served either shaken with ice 
+                    (on the rocks),without ice (straight up), or blended with ice (frozen margarita)
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button style="color: rgb(41, 44, 201);" mat-button  (click)="getMargarita('Margarita')">Click</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
